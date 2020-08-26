@@ -124,7 +124,9 @@ body {
   .nav-menu li {
     margin-left: 25px;
   }
+}
 
+@media screen and (min-width: 550px) {
   /* Title principal */
 
   .principal .title {

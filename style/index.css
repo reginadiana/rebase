@@ -151,6 +151,27 @@ body {
 
 /* End Header */
 
+/* Start Services */
+
+section .container {
+  background-color: #fff;
+  text-align: center;
+  padding: 10%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-service, .second-service {
+  background-color: pink;
+  margin-bottom: 30px;
+}
+
 /* Desktop */
 @media screen and (min-width: 1000px) {
 
@@ -183,6 +204,16 @@ body {
 
   .grid div:last-child {
     width: 1200px;
+  }
+
+  /* Start Service */
+  .services {
+    flex-direction: row;
+  }
+
+  .first-service, .second-service {
+    margin-right: 30px;
+    width: 400px;
   }
 }
 

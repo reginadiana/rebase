@@ -169,16 +169,15 @@ section .container {
 .services {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  max-width: 400px;
+  margin: auto;
 }
 
 .first-service, .second-service {
-  padding-left: 5px;
-  padding-right: 5px;
-  height: 600px;
-  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 30px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .services h3 {
@@ -237,6 +236,14 @@ section .container {
 
   .grid div:last-child {
     width: 1200px;
+  }
+
+  /* Start Services */
+  .services {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+    margin: none;
   }
 }
 

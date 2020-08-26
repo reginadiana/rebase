@@ -173,7 +173,7 @@ section .container {
 }
 
 .first-service, .second-service {
-  width: 400px;
+  /*width: 400px; MOTIVO DA QUEBRA*/
   height: 600px;
   margin: auto;
   margin-bottom: 30px;

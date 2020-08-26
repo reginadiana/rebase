@@ -204,6 +204,31 @@ section .container {
   font-size: 20.1px;
 }
 
+.clients {
+  font-weight: 600;
+  background-color: yellow;
+}
+
+.clients img {
+  width: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.clients span {
+  color: var(--blue);
+}
+
+.clients p {
+  background-color: violet;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 2.7px;
+  margin: auto;
+  max-width: 400px;
+}
+
 /* Desktop */
 @media screen and (min-width: 1000px) {
 

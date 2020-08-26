@@ -222,7 +222,6 @@ section .container {
   letter-spacing: 4.5px;
   margin: auto;
   padding-bottom: 60px;
-  width: 400px;
   background-color: turquoise;
 }
 
@@ -279,13 +278,6 @@ section .container {
     justify-content: center;
     max-width: none;
     margin: none;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  /* Start Portifolio */
-  .clients h3 {
-    width: 500px;
   }
 }
 

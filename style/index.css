@@ -163,7 +163,7 @@ section .container {
   background-color: #fff;
   text-align: center;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 10px;
 }
 
 .services {
@@ -206,7 +206,6 @@ section .container {
 
 .clients {
   font-weight: 600;
-  background-color: yellow;
 }
 
 .clients img {
@@ -215,12 +214,23 @@ section .container {
   margin-bottom: 20px;
 }
 
-.clients span {
+.clients h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 1.33;
+  letter-spacing: 4.5px;
+  margin: auto;
+  padding-bottom: 60px;
+  width: 400px;
+  background-color: turquoise;
+}
+
+.clients span, h3 {
   color: var(--blue);
 }
 
 .clients p {
-  background-color: violet;
   text-align: center;
   font-size: 18px;
   line-height: 1.39;
@@ -269,6 +279,13 @@ section .container {
     justify-content: center;
     max-width: none;
     margin: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  /* Start Portifolio */
+  .clients h3 {
+    width: 500px;
   }
 }
 

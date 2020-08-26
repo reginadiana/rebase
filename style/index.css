@@ -15,7 +15,12 @@
 :root{
 	--main-font: 'Archia Medium';
 	--main-font-color: #252525;
-	--blue: #0036b2;
+  --blue: #0036b2;
+  --green: #47e500;
+}
+
+a {
+  color: var(--main-font-color);
 }
 
 body {
@@ -118,7 +123,8 @@ body {
 
 .sub-title p:first-child:first-letter,
 .principal h2:first-letter,
-.grid div h4::first-letter  { /* Pega a primeira letra */
+.grid div h4::first-letter,
+.services h3::first-letter  { /* Pega a primeira letra */
   text-transform: capitalize;
 }
 
@@ -156,7 +162,6 @@ body {
 section .container {
   background-color: #fff;
   text-align: center;
-  padding: 10%;
   padding-top: 90px;
   padding-bottom: 90px;
 }
@@ -168,8 +173,34 @@ section .container {
 }
 
 .first-service, .second-service {
-  background-color: pink;
+  width: 400px;
+  height: 600px;
+  margin: auto;
   margin-bottom: 30px;
+}
+
+.services h3 {
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: 5.2px;
+  color: var(--blue);
+  padding: 20px 50px;
+}
+
+.services .line {
+  width: 100%;
+  background-color: var(--blue);
+  height: 3px;
+}
+
+.services p {
+  padding: 20px 30px;
+}
+
+.spotlight {
+  font-weight: 600;
+  color: var(--green);
+  font-size: 20.1px;
 }
 
 /* Desktop */
@@ -208,13 +239,14 @@ section .container {
 
   /* Start Service */
   .services {
+    display: flex;
     flex-direction: row;
   }
 
   .first-service, .second-service {
-    margin-right: 30px;
-    width: 400px;
+    margin: 2%;
   }
+
 }
 
 @media screen and (min-width: 550px) {

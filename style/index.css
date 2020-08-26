@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+/*Global styles*/
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+:root{
+	--main-font: 'Archia Medium';
+	--main-font-color: #252525;
+	--blue: #0036b2;
+}
+
+body {
+	background-color: #fff;
+}
+
+/* Start Menu */
+
+/* Icon Burguer */
+.menu-toggle {
+	width: 100%;
+	padding: 15px;
+	padding-bottom: 50px;
+}
+
+.fa-icon {
+	width: 30px;
+	position: absolute;
+	right: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+/* Menu bar*/
+
+.nav-menu li {
+	padding-left: 4%;
+	padding-bottom: 2%;
+	text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 4px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.close {
+	display: none;
+}
+
+.open {
+	display: block;
+}
+
+/* End Menu */
+
+/* Start Header */
+
+.principal {
+	background-color: var(--blue);
+	color: #fff;
+  text-align: center;
+}
+
+.principal .title {
+  width: 400px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.principal h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 90px;
+}
+
+.principal strong {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.sub-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.54;
+  letter-spacing: 5.2px;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.sub-title p:first-child:first-letter { /* Pega a primeira letra */
+  text-transform: capitalize;
+}
+
+/* End Header */
+
+/* Desktop */
+@media screen and (min-width: 1000px) {
+
+  /* Menu */
+	.menu-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    margin: 1%;
+    margin-inline-end: 10%;
+    justify-content: flex-end;
+  }
+
+  .nav-menu li {
+    margin-left: 25px;
+  }
+
+  /* Title principal */
+
+  .principal .title {
+    width: 600px;
+  }
+
+  .principal h1 {
+    font-size: 7rem;
+    line-height: 125px;
+  }
+}

@@ -19,6 +19,10 @@
   --green: #47e500;
 }
 
+::selection {
+  background-color: var(--green);
+}
+
 a {
   color: var(--main-font-color);
 }
@@ -204,6 +208,8 @@ section .container {
   font-size: 20.1px;
 }
 
+/* Start Portifolio */
+
 .clients {
   font-weight: 600;
 }
@@ -279,6 +285,8 @@ section .container {
     max-width: none;
     margin: none;
   }
+
+  /* Start poritoflio */
 }
 
 @media screen and (min-width: 550px) {
@@ -299,3 +307,75 @@ section .container {
 
   /*  End Header */
 }
+
+/* Start Footer*/
+footer {
+  text-align: center;
+  color: white;
+  padding: 30px;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+footer h2 {
+  line-height: 38px;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+}
+
+.title-footer {
+  margin-bottom: 10px;
+}
+
+footer div {
+  margin-bottom: 15px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.footer-contact {
+  margin-top: 15px;
+}
+
+footer button {
+  text-transform: uppercase;
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: white;
+  border-color: transparent;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 750px;
+    margin: auto;
+  }
+}
+
+
+/* End Footer*/

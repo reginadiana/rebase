@@ -137,6 +137,18 @@ body {
   padding-bottom: 100px;
 }
 
+.img-3 {
+  width: 300px;
+}
+
+.img-5 {
+  text-align: left;
+}
+
+.img-5 img {
+  width: 100%;
+}
+
 .sub-title p:first-child:first-letter,
 .principal h2:first-letter,
 .grid div h4::first-letter,
@@ -302,6 +314,10 @@ section .container {
     margin: none;
   }
 
+  .img-3 {
+    width: 700px;
+  }
+
   /* Start poritoflio */
   .list-clients {
     display: grid;
@@ -316,6 +332,9 @@ section .container {
 
   .client:nth-child(even) {
     margin-left: 450px;
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
   }
 }
 
@@ -485,6 +504,12 @@ footer button {
   }  
 }
 
+@media screen and (min-width: 600px) {
+  .img-5 img {
+    width: 500px;
+  }
+}
+
 @media screen and (max-width: 900px) and (min-width: 800px) {
   footer {
     display: flex;
@@ -492,6 +517,12 @@ footer button {
     text-align: left;
     width: 750px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .img-3 {
+    width: 500px;
   }
 }
 

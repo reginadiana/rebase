@@ -1,22 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
 
 /*Global styles*/
 *,
 *::before,
-*::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	text-decoration: none;
-	list-style: none;
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-:root{
-	--main-font: 'Archia Medium';
-	--main-font-color: #252525;
+:root {
   --blue: #0036b2;
   --green: #47e500;
+  --main-font-color: #252525;
+  --main-font: "Archia Medium";
 }
 
 ::selection {
@@ -35,54 +35,53 @@ body {
 
 .menu {
   background-color: #fff;
-  margin-top: 2px;
 }
 
 /* Icon Burguer */
 .menu-toggle {
-	width: 100%;
-	padding: 15px;
-  padding-bottom: 45px;
+  padding: 15px 15px 45px;
+}
+
+.menu-burger-logo {
+  display: flex;
 }
 
 .icon-burguer {
-  border: 1px #dddddd solid;
-  padding: 8px;
-  padding-bottom: 3px;
   border-radius: 4px;
-  position: absolute;
-	right: 15px;
-  top: 10px;
-  width: 60px;
-  display: grid;
+  border: 1px #dddddd solid;
+  display: flex;
   justify-content: center;
+  padding: 8px 8px 3px;
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  width: 60px;
 }
 
 .fa-icon {
-  width: 20px;
   cursor: pointer;
   opacity: 0.2;
+  width: 20px;
 }
 
 /* Menu bar*/
 
 .nav-menu li {
-	padding-left: 16px;
-	padding-bottom: 10px;
-	text-transform: uppercase;
-  font-weight: 600;
+  cursor: pointer;
   font-size: 0.9rem;
+  font-weight: 600;
   letter-spacing: 4px;
   line-height: 25px;
-  cursor: pointer;
+  padding: 0 0 10px 16px;
+  text-transform: uppercase;
 }
 
 .close {
-	display: none;
+  display: none;
 }
 
 .open {
-	display: block;
+  display: block;
 }
 
 /* End Menu */
@@ -90,7 +89,7 @@ body {
 /* Start Header */
 
 .principal {
-	color: #fff;
+  color: #fff;
   text-align: center;
 }
 
@@ -113,28 +112,41 @@ body {
 .sub-title {
   font-size: 26px;
   font-weight: 300;
-  line-height: 1.54;
   letter-spacing: 5.2px;
-  width: 100%;
+  line-height: 1.54;
+  margin: 80px auto 100px auto;
   max-width: 680px;
-  margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 80px;
-  margin-bottom: 100px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .principal h2 {
-  font-weight: 300;
   font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 5.2px;
+  line-height: 55px;
+  margin: auto;
+  max-width: 350px;
+  padding-bottom: 100px;
   text-align: center;
   width: 100%;
-  max-width: 350px;
-  margin: auto;
-  line-height: 55px;
-  letter-spacing: 5.2px;
-  padding-top: 1.2;
-  padding-bottom: 100px;
+}
+
+.img-1 {
+  position: absolute;
+  left: 0px;
+  top: 235px;
+  z-index: -1;
+}
+
+.img-1 img {
+  width: 100%;
+}
+
+.img-2 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
 }
 
 .img-3 {
@@ -145,29 +157,35 @@ body {
   text-align: left;
 }
 
-.img-5 img {
+.img-6 {
+  text-align: right;
+}
+
+.img-5 img,
+.img-6 img {
   width: 100%;
 }
 
 .sub-title p:first-child:first-letter,
 .principal h2:first-letter,
 .grid div h4::first-letter,
-.services h3::first-letter  { /* Pega a primeira letra */
+.services h3::first-letter {
+  /* Pega a primeira letra */
   text-transform: capitalize;
 }
 
 .grid {
   display: flex;
   flex-direction: column;
-  padding: 60px;
-  width: 100%;
-  max-width: 450px;
   margin: auto;
+  max-width: 450px;
+  padding: 60px;
   text-align: center;
+  width: 100%;
 }
 
 .grid div {
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
 }
 
 .grid div h4 {
@@ -193,8 +211,7 @@ body {
 section .container {
   background-color: #fff;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 10px;
+  padding: 90px 0 10px;
 }
 
 .services {
@@ -204,10 +221,9 @@ section .container {
   margin: auto;
 }
 
-.first-service, .second-service {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 30px;
+.first-service,
+.second-service {
+  margin: 0 5% 30px 5%;
   max-width: 400px;
 }
 
@@ -244,8 +260,7 @@ section .container {
 
 .clients img {
   width: 110px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .clients h3 {
@@ -255,11 +270,11 @@ section .container {
   line-height: 1.33;
   letter-spacing: 4.5px;
   padding-bottom: 60px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
-.clients span, h3 {
+.clients span,
+h3 {
   color: var(--blue);
 }
 
@@ -274,18 +289,20 @@ section .container {
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
-
   /* Start Menu */
-	.menu-toggle {
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .menu-toggle {
     display: none;
   }
 
   .nav-menu {
     display: flex;
-    margin: 1%;
     margin-top: 2px;
-    margin-inline-end: 23%;
-    justify-content: flex-end;
   }
 
   .nav-menu li {
@@ -299,7 +316,7 @@ section .container {
     max-width: 1000px;
   }
   .grid div {
-    margin: 20px; 
+    margin: 20px;
   }
 
   .grid div:last-child {
@@ -370,8 +387,7 @@ section .container {
 }
 
 .form-title {
- padding-top: 90px;
- padding-bottom: 20px; 
+  padding: 90px 0 20px;
 }
 
 .form span {
@@ -379,6 +395,7 @@ section .container {
   font-weight: 700;
   letter-spacing: 3px;
   font-size: 1.5rem;
+  margin-bottom: 100px;
 }
 
 form {
@@ -386,7 +403,7 @@ form {
 }
 
 .form .inputs {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
@@ -403,29 +420,25 @@ form input {
   background-color: var(--blue);
   border: none;
   border-bottom: 1px white solid;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
   caret-color: white;
+  margin-top: 15px;
+  outline: 0;
+  padding: 8px 20px 15px;
+  width: 100%;
 }
 
 form button {
-  font-weight: 600;
-  font-size: 1.6rem;
-  letter-spacing: 7px;
-  color: black;
   background-color: var(--green);
   border-color: transparent;
   border-radius: 5px;
-  width: 180px;
-  padding: 3px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: auto;
+  color: black;
   cursor: pointer;
-  margin-bottom: 182px;
-  margin-top: 80px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 7px;
+  margin: 80px auto 182px;
+  padding: 10px 3px;
+  width: 180px;
 }
 
 /* End Form */
@@ -434,11 +447,8 @@ form button {
 footer {
   text-align: center;
   color: white;
-  padding: 10px;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 50px 10px 40px;
+  margin: 0 10px;
   border-top: 1px white solid;
 }
 
@@ -476,9 +486,7 @@ footer button {
   letter-spacing: 2px;
   background-color: white;
   border-color: transparent;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   margin-top: 13px;
   cursor: pointer;
@@ -501,11 +509,12 @@ footer button {
     text-align: left;
     width: 900px;
     margin: auto;
-  }  
+  }
 }
 
 @media screen and (min-width: 600px) {
-  .img-5 img {
+  .img-5 img,
+  .img-6 img {
     width: 500px;
   }
 }

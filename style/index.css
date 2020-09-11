@@ -35,27 +35,39 @@ body {
 
 .menu {
   background-color: #fff;
+  margin-top: 2px;
 }
 
 /* Icon Burguer */
 .menu-toggle {
 	width: 100%;
 	padding: 15px;
-	padding-bottom: 50px;
+  padding-bottom: 45px;
+}
+
+.icon-burguer {
+  border: 1px #dddddd solid;
+  padding: 8px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  position: absolute;
+	right: 15px;
+  top: 10px;
+  width: 60px;
+  display: grid;
+  justify-content: center;
 }
 
 .fa-icon {
-	width: 30px;
-	position: absolute;
-	right: 20px;
-  top: 15px;
+  width: 20px;
   cursor: pointer;
+  opacity: 0.2;
 }
 
 /* Menu bar*/
 
 .nav-menu li {
-	padding-left: 30px;
+	padding-left: 16px;
 	padding-bottom: 10px;
 	text-transform: uppercase;
   font-weight: 600;
@@ -150,7 +162,10 @@ body {
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 3.6px;
-  margin-bottom: 20px;
+}
+
+.grid div h4:nth-child(2) {
+  margin-bottom: 22px;
 }
 
 .grid div p {
@@ -212,6 +227,7 @@ section .container {
 
 .clients {
   font-weight: 600;
+  margin-bottom: 100px;
 }
 
 .clients img {
@@ -222,7 +238,7 @@ section .container {
 
 .clients h3 {
   text-transform: capitalize;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 45px;
   line-height: 1.33;
   letter-spacing: 4.5px;
@@ -287,6 +303,20 @@ section .container {
   }
 
   /* Start poritoflio */
+  .list-clients {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .client {
+    display: flex;
+    width: 500px;
+  }
+
+  .client:nth-child(even) {
+    margin-left: 450px;
+  }
 }
 
 @media screen and (min-width: 550px) {

@@ -1,7 +1,4 @@
 
-:warning: **Este não é um site oficial**
-
-
 ## Descrição do projeto 
 
 <p align="justify">
@@ -15,7 +12,7 @@
 
 ## Deploy da Aplicação
 
-> https://clone-rebase.netlify.app/
+> https://clone-rebase.netlify.app/ :warning: **Este não é um site oficial**
 
 ## Como acessar e rodar o projeto
 

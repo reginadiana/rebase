@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
-
 /*Global styles*/
 *,
 *::before,
@@ -168,7 +166,7 @@ body {
 
 .sub-title p:first-child:first-letter,
 .principal h2:first-letter,
-.grid div h4::first-letter,
+.grid div h3::first-letter,
 .services h3::first-letter {
   /* Pega a primeira letra */
   text-transform: capitalize;
@@ -188,13 +186,14 @@ body {
   padding-bottom: 40px;
 }
 
-.grid div h4 {
+.grid div h3 {
   font-size: 18px;
   line-height: 1.39;
   letter-spacing: 3.6px;
+  color: white;
 }
 
-.grid div h4:nth-child(2) {
+.grid div h3:nth-child(2) {
   margin-bottom: 22px;
 }
 

@@ -9,11 +9,6 @@
 
 ![Screenshot_2020-11-18 Rebase - Code is in our Core](https://user-images.githubusercontent.com/46378210/99586627-bf9e0600-29c6-11eb-8374-b9364b09d5de.png)
 
-
-## Deploy da Aplicação
-
-> https://clone-rebase.netlify.app/ :warning: **Este não é um site oficial**
-
 ## Como acessar e rodar o projeto
 
 No terminal, clone o projeto: 
